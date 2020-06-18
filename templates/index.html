@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+<h1>Hola {{ username  }}</h1>
+<body>
+{{  course_name }}
+    
+
+
+{%  if is_premium %}
+<p> es premium  </p>
+{% else %}
+ <p>no es premium</p>
+{% endif %}
+
+
+{% if courses %}
+<p>Listado de cursos</p>
+<ul>
+    {% for course in courses %}
+       <li>{{  course }}</li>
+    {%endfor%}
+</ul>
+{% endif %}
+
+</body>
+
+</html>
