@@ -19,6 +19,7 @@
 # step 5
 
 (set FLASK_APP=app.py) Setting the file selected for start the run
+(export FLASK_ENV=development) Setting the environment (production/development)
 
 # step 6
 
