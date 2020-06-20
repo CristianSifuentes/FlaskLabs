@@ -2,6 +2,8 @@
 <html>
 <head>
 <title>Title of the document</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')  }}">
+<script type="text/javascript" src="{{ url_for('static', filename='js/main.js')  }}"></script>
 </head>
 <h1>Hola {{ username  }}</h1>
 <body>
@@ -25,6 +27,8 @@
 </ul>
 {% endif %}
 
+
+<img src="{{ url_for('static', filename='images/image.jpg') }}" alt="">
 </body>
 
 </html>
