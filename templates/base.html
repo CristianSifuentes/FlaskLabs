@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')  }}">
+<script type="text/javascript" src="{{ url_for('static', filename='js/main.js')  }}"></script>
+</head>
+<body>
+    <!-- <h1> Mensaje del archivo base</h1> -->
+     <a href="{{ url_for('index') }}"> Index </a>
+     <a href="{{ url_for('about') }}"> About </a>
+
+
+    {% block content  %}
+
+    {% endblock %}
+
+    <!-- {% block footer  %}
+    <footer>
+        pie de pagina
+    </footer>
+    {% endblock %} -->
+
+
+</body>
+
+</html>

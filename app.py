@@ -16,6 +16,20 @@ def index():
     courses=courses
     )
 
+@app.route('/about')
+def about():
+    print("Estamos en el about")
+    return render_template('about.html')
+
+@app.after_request
+def after_request(res):
+    print("despues del la petición")
+    return res
+
+
+@app.before_request
+def before_request():
+    print('Antes de la petición')
 
 @app.route('/datos')
 def datos():
