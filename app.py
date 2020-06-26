@@ -38,6 +38,7 @@ def datos():
       
       return 'Listado de datos : ' + nombre + ' '  + curso
 
+
 @app.route('/hello')
 def hello():
     return 'Hello, World'
